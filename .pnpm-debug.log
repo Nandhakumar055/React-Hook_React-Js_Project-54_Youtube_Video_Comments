@@ -1,0 +1,963 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "video-streaming-app",
+      "version": "0.1.0",
+      "private": true,
+      "dependencies": {
+        "@craco/craco": "6.4.3",
+        "@testing-library/jest-dom": "5.16.1",
+        "@testing-library/react": "12.1.2",
+        "@testing-library/user-event": "13.5.0",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-router-dom": "5.2.0",
+        "react-scripts": "5.0.0",
+        "styled-components": "5.3.3",
+        "react-player": "2.9.0",
+        "uuid": "8.3.2"
+      },
+      "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix src/",
+        "format": "prettier --write \"./src\""
+      },
+      "lint-staged": {
+        "*.js": [
+          "npm run lint:fix"
+        ],
+        "*.{js, jsx, json, html, css}": [
+          "npm run format"
+        ]
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      },
+      "devDependencies": {
+        "@babel/core": "7.16.5",
+        "@babel/eslint-parser": "7.16.5",
+        "babel-plugin-styled-components": "2.0.2",
+        "eslint": "8.5.0",
+        "eslint-config-airbnb": "18.2.1",
+        "eslint-config-prettier": "8.1.0",
+        "eslint-plugin-prettier": "3.3.1",
+        "lint-staged": "10.5.4",
+        "prettier": "2.5.1"
+      }
+    },
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/workspace/.pnpm-store/v3",
+    "virtualStoreDir": "/home/workspace/react-hooks/sessions/state-hook-part-2-final/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/core/7.16.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@babel/core",
+      "rawSpec": "7.16.5"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/core/7.16.5",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/eslint-parser/7.16.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@babel/eslint-parser",
+      "rawSpec": "7.16.5"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/eslint-parser/7.16.5",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "8 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/babel-plugin-styled-components/2.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "babel-plugin-styled-components",
+      "rawSpec": "2.0.2"
+    }
+  },
+  "9 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-styled-components/2.0.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "10 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-airbnb",
+      "rawSpec": "18.2.1"
+    }
+  },
+  "11 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "12 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-config-prettier",
+      "rawSpec": "8.1.0"
+    }
+  },
+  "13 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "14 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint-plugin-prettier",
+      "rawSpec": "3.3.1"
+    }
+  },
+  "15 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "16 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lint-staged/10.5.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "lint-staged",
+      "rawSpec": "10.5.4"
+    }
+  },
+  "17 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "18 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.5.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "2.5.1"
+    }
+  },
+  "19 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.5.1",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@craco/craco/6.4.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@craco/craco",
+      "rawSpec": "6.4.3"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@craco/craco/6.4.3",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/jest-dom/5.16.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/jest-dom",
+      "rawSpec": "5.16.1"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.16.1",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "24 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/react/12.1.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/react",
+      "rawSpec": "12.1.2"
+    }
+  },
+  "25 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/12.1.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "26 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@testing-library/user-event/13.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@testing-library/user-event",
+      "rawSpec": "13.5.0"
+    }
+  },
+  "27 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/user-event/13.5.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-router-dom/5.2.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-router-dom",
+      "rawSpec": "5.2.0"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-router-dom/5.2.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "30 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/8.5.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "8.5.0"
+    }
+  },
+  "31 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/8.5.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "32 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/@babel/core/-/core-7.16.5.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel/core/-/core-7.16.5.tgz"
+  },
+  "33 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.16.5.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.16.5.tgz"
+  },
+  "34 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
+  },
+  "35 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/@craco/craco/-/craco-6.4.3.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@craco/craco/-/craco-6.4.3.tgz"
+  },
+  "36 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/@testing-library/user-event/-/user-event-13.5.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@testing-library/user-event/-/user-event-13.5.0.tgz"
+  },
+  "37 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/eslint/-/eslint-8.5.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint/-/eslint-8.5.0.tgz"
+  },
+  "38 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react/17.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react",
+      "rawSpec": "17.0.2"
+    }
+  },
+  "39 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "40 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-scripts/5.0.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-scripts",
+      "rawSpec": "5.0.0"
+    }
+  },
+  "41 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-scripts/5.0.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "42 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-player/2.9.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-player",
+      "rawSpec": "2.9.0"
+    }
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-player/2.9.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "44 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/uuid/8.3.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "uuid",
+      "rawSpec": "8.3.2"
+    }
+  },
+  "45 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/uuid/8.3.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "46 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/react-dom/17.0.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "react-dom",
+      "rawSpec": "17.0.2"
+    }
+  },
+  "47 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "48 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/styled-components/5.3.3",
+    "wanted": {
+      "dependentId": ".",
+      "name": "styled-components",
+      "rawSpec": "5.3.3"
+    }
+  },
+  "49 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/styled-components/5.3.3",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "resolved"
+  },
+  "50 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.0.tgz"
+  },
+  "51 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fcode-frame"
+  },
+  "52 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fgenerator"
+  },
+  "53 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fhelper-compilation-targets"
+  },
+  "54 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fhelper-module-transforms"
+  },
+  "55 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fhelpers"
+  },
+  "56 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Fparser"
+  },
+  "57 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Ftemplate"
+  },
+  "58 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Ftraverse"
+  },
+  "59 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@babel%2Ftypes"
+  },
+  "60 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/babel-plugin-styled-components/2.0.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "61 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-airbnb/18.2.1",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-config-prettier/8.1.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint-plugin-prettier/3.3.1",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "64 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/10.5.4",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "65 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/jest-dom/5.16.1",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "66 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@testing-library/react/12.1.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "67 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-router-dom/5.2.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "68 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react/17.0.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-player/2.9.0",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "70 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/uuid/8.3.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "71 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/react-dom/17.0.2",
+    "requester": "/home/workspace/react-hooks/sessions/state-hook-part-2-final",
+    "status": "found_in_store"
+  },
+  "72 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/@babel/core/-/core-7.16.5.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel/core/-/core-7.16.5.tgz"
+  },
+  "73 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.16.5.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.16.5.tgz"
+  },
+  "74 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz"
+  },
+  "75 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/@craco/craco/-/craco-6.4.3.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@craco/craco/-/craco-6.4.3.tgz"
+  },
+  "76 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/eslint/-/eslint-8.5.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/eslint/-/eslint-8.5.0.tgz"
+  },
+  "77 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/@testing-library/user-event/-/user-event-13.5.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@testing-library/user-event/-/user-event-13.5.0.tgz"
+  },
+  "78 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 2,
+      "resource": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.0.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.0.tgz"
+  },
+  "79 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fcode-frame"
+  },
+  "80 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fhelper-compilation-targets"
+  },
+  "81 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fgenerator"
+  },
+  "82 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fhelper-module-transforms"
+  },
+  "83 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fhelpers"
+  },
+  "84 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Fparser"
+  },
+  "85 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Ftemplate"
+  },
+  "86 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Ftraverse"
+  },
+  "87 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@babel%2Ftypes"
+  },
+  "88 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/@babel/core/7.16.5 failed!",
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "89 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/@babel/eslint-parser/7.16.5 failed!",
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "90 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo",
+      "attempts": 1,
+      "resource": "https://registry.npmjs.org/styled-components/-/styled-components-5.3.3.tgz"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/styled-components/-/styled-components-5.3.3.tgz"
+  },
+  "91 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/prettier/2.5.1 failed!",
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "92 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/@craco/craco/6.4.3 failed!",
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "93 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/convert-source-map"
+  },
+  "94 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/eslint/8.5.0 failed!",
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "95 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/@testing-library/user-event/13.5.0 failed!",
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "96 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/debug"
+  },
+  "97 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/gensync"
+  },
+  "98 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/json5"
+  },
+  "99 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "EAI_AGAIN",
+      "code": "EAI_AGAIN",
+      "erroredSysCall": "getaddrinfo"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/semver"
+  },
+  "100 warn pnpm:package-requester": {
+    "message": "Fetching registry.npmjs.org/react-scripts/5.0.0 failed!",
+    "prefix": "/home/workspace/react-hooks/sessions/state-hook-part-2-final"
+  },
+  "101 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "pkgsStack": [
+      {
+        "id": "registry.npmjs.org/@babel/core/7.16.5",
+        "name": "@babel/core",
+        "version": "7.16.5"
+      }
+    ],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/@babel%2Fcode-frame: request to https://registry.npmjs.org/@babel%2Fcode-frame failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "pnpm: GET https://registry.npmjs.org/@babel%2Fcode-frame: request to https://registry.npmjs.org/@babel%2Fcode-frame failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:85807:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}
